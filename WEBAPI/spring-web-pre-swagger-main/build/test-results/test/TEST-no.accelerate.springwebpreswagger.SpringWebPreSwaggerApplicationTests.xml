@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-02T18:27:53" hostname="DESKTOP-LVBR4R0" time="0.83">
+  <properties/>
+  <testcase name="contextLoads()" classname="no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplicationTests" time="0.83"/>
+  <system-out><![CDATA[18:27:38.705 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [SpringWebPreSwaggerApplicationTests]: using SpringBootContextLoader
+18:27:38.713 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:27:38.715 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplicationTests]: SpringWebPreSwaggerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:27:38.767 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [SpringWebPreSwaggerApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+18:27:38.888 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Dell\Desktop\spring-web-pre-swagger-main\spring-web-pre-swagger-main\build\classes\java\main\no\accelerate\springwebpreswagger\SpringWebPreSwaggerApplication.class]
+18:27:38.890 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplication for test class no.accelerate.springwebpreswagger.SpringWebPreSwaggerApplicationTests
+18:27:39.109 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [SpringWebPreSwaggerApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+18:27:39.112 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [SpringWebPreSwaggerApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-02-02T18:27:39.802Z  INFO 8304 --- [    Test worker] .a.s.SpringWebPreSwaggerApplicationTests : Starting SpringWebPreSwaggerApplicationTests using Java 19.0.1 with PID 8304 (started by Dell in C:\Users\Dell\Desktop\spring-web-pre-swagger-main\spring-web-pre-swagger-main)
+2023-02-02T18:27:39.805Z  INFO 8304 --- [    Test worker] .a.s.SpringWebPreSwaggerApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-02-02T18:27:41.855Z  INFO 8304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02T18:27:42.057Z  INFO 8304 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175 ms. Found 4 JPA repository interfaces.
+2023-02-02T18:27:43.165Z  INFO 8304 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02T18:27:43.324Z  INFO 8304 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-02T18:27:43.772Z  WARN 8304 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-02T18:27:44.069Z  INFO 8304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-02T18:27:44.505Z  INFO 8304 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f0a4e30
+2023-02-02T18:27:44.508Z  INFO 8304 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-02T18:27:44.623Z  INFO 8304 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+Hibernate: alter table if exists project drop constraint if exists FKjvi932wdxw4ux6m7u6abiy7qv
+Hibernate: alter table if exists student drop constraint if exists FK6qd34ryg9xge96upkktpry261
+Hibernate: alter table if exists student_subject drop constraint if exists FK5cvx0kd792xhvd99s3bsbygfq
+Hibernate: alter table if exists student_subject drop constraint if exists FKnhw926s5os3ei5wqfaq94j0mh
+Hibernate: alter table if exists subject drop constraint if exists FKmo243s3ik7ou3mndxwn1jee87
+Hibernate: drop table if exists professor cascade
+Hibernate: drop table if exists project cascade
+Hibernate: drop table if exists student cascade
+Hibernate: drop table if exists student_subject cascade
+Hibernate: drop table if exists subject cascade
+Hibernate: create table professor (id serial not null, name varchar(50) not null, primary key (id))
+Hibernate: create table project (id serial not null, title varchar(100) not null, student_id integer, primary key (id))
+Hibernate: create table student (id serial not null, name varchar(50) not null, professor_id integer, primary key (id))
+Hibernate: create table student_subject (student_id integer not null, subject_id integer not null, primary key (student_id, subject_id))
+Hibernate: create table subject (id serial not null, code varchar(10) not null, title varchar(100) not null, professor_id integer, primary key (id))
+Hibernate: alter table if exists project add constraint FKjvi932wdxw4ux6m7u6abiy7qv foreign key (student_id) references student
+Hibernate: alter table if exists student add constraint FK6qd34ryg9xge96upkktpry261 foreign key (professor_id) references professor
+Hibernate: alter table if exists student_subject add constraint FK5cvx0kd792xhvd99s3bsbygfq foreign key (subject_id) references subject
+Hibernate: alter table if exists student_subject add constraint FKnhw926s5os3ei5wqfaq94j0mh foreign key (student_id) references student
+Hibernate: alter table if exists subject add constraint FKmo243s3ik7ou3mndxwn1jee87 foreign key (professor_id) references professor
+2023-02-02T18:27:47.309Z  INFO 8304 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02T18:27:47.330Z  INFO 8304 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02T18:27:49.532Z  WARN 8304 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02T18:27:53.646Z  INFO 8304 --- [    Test worker] .a.s.SpringWebPreSwaggerApplicationTests : Started SpringWebPreSwaggerApplicationTests in 14.439 seconds (process running for 16.857)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
